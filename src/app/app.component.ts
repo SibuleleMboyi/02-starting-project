@@ -9,7 +9,7 @@ import { UserInputComponent } from './user-input/user-input.component';
   imports: [HeaderComponent, UserInputComponent],
 })
 export class AppComponent {
-  public calculateInvestmentResults(data: {
+  public onCalculateInvestmentResults(data: {
     initialInvestment: number;
     duration: number;
     annualInvestment: number;
@@ -35,6 +35,8 @@ export class AppComponent {
       });
     }
 
+    console.log('annualData: ');
+    console.log(annualData);
     return annualData;
   }
 }
