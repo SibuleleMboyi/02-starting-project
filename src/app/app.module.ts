@@ -5,10 +5,11 @@ import { UserInputComponent } from './user-input/user-input.component';
 import { InvestmentsResultsComponent } from './investments-results/investments-results.component';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { UserInputModule } from './user-input/user-input.module';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, UserInputComponent, InvestmentsResultsComponent],
-  imports: [FormsModule, BrowserModule],
+  declarations: [AppComponent, HeaderComponent, InvestmentsResultsComponent],
+  imports: [BrowserModule, UserInputModule],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
